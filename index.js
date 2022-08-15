@@ -4,28 +4,69 @@ const path = require('path');
 const inquirer = require ('inquirer');
 
 
+//Questions for management 
 
-const questions = [
+const questionsForManagement = [
 
 {
     type: "input",
     message: "What is the team manager's name?",
-    name: "title",
+    name: "Manager Name",
 }, 
 {
     type: "input",
-    message: "What is your employee ID?",
-    name: "title",
+    message: "What is the manager's ID?",
+    name: " Manager Employee ID",
 }, 
 {
     type: "input",
-    message: "What is your email address?",
-    name: "title",
+    message: "What is the manager's email address?",
+    name: "Manager Email Address",
 }, 
 {
     type: "input",
-    message: "What is your office number?",
-    name: "title",
+    message: "What is the manager's office number?",
+    name: " Manager Office number",
 }, 
 
 ];
+
+//Follow up questions for students 
+
+const followUpQuestions = [
+
+    {
+        type: "input",
+        message: "What is the team manager's name?",
+        name: "Manager Name",
+    }, 
+
+    {
+        type: "input",
+        message: "What is the team manager's name?",
+        name: "Manager Name",
+    }, 
+
+    {
+        type: "input",
+        message: "What is the team manager's name?",
+        name: "Manager Name",
+    }, 
+
+    {
+        type: "input",
+        message: "What is the team manager's name?",
+        name: "Manager Name",
+    }, 
+
+];
+
+
+
+
+
+
+
+
+
+

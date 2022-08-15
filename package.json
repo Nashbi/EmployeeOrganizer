@@ -1,0 +1,27 @@
+{
+  "name": "employeeorganizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nashbi/EmployeeOrganizer.git"
+  },
+  "author": "Nashbi Grand-Jean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nashbi/EmployeeOrganizer/issues"
+  },
+  "homepage": "https://github.com/Nashbi/EmployeeOrganizer#readme",
+  "dependencies": {
+    
+    "inquirer": "^9.1.0"
+  }
+}

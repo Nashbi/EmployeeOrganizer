@@ -35,7 +35,7 @@ const questionsForManagement = () => {
 }, 
 
 ]).then(data => {
-
+followUpQuestions();
 })
 };
 
@@ -69,18 +69,16 @@ const followUpQuestions = () => {
         name: "Employee role",
     }, 
 
-])};
+]).then(data => {
+    followUpQuestions();
+
+
+    
+})};
+
+
+
+
+
 
 questionsForManagement();
-
-followUpQuestions ();
-
-
-
-
-
-
-
-
-
-

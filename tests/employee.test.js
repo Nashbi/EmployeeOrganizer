@@ -11,7 +11,7 @@ describe("employee", () => {
 
 describe("employee", () => {
         
-    it("Should include an employee email", () => {
+    it("Should include an employee id", () => {
 
     const email = 1 
 
@@ -21,7 +21,7 @@ describe("employee", () => {
 
 describe("employee", () => {
         
-    it("Should include an employee id", () => {
+    it("Should include an employee email", () => {
 
     const id = 1 
 

@@ -1,13 +1,18 @@
 // Including packages needed to produce this work
 const fs = require('fs');
 const path = require('path');
-const inquirer = require ('inquirer');
-
+var inquirer = require('inquirer');
 
 //Questions for management 
 
-const questionsForManagement = [
+const questionsForManagement = () => { 
+    inquirer.prompt ( [
 
+{
+    type: "input",
+    message: "What is the team manager's name?",
+    name: "Manager Name",
+},  
 {
     type: "input",
     message: "What is the team manager's name?",
@@ -29,37 +34,46 @@ const questionsForManagement = [
     name: " Manager Office number",
 }, 
 
-];
+]).then(data => {
+
+})
+};
 
 //Follow up questions for students 
 
-const followUpQuestions = [
+const followUpQuestions = () => {
+    inquirer.prompt (
+    [
 
     {
         type: "input",
-        message: "What is the team manager's name?",
-        name: "Manager Name",
+        message: "What is the employee's name?",
+        name: "Employee Email",
     }, 
 
     {
         type: "input",
-        message: "What is the team manager's name?",
-        name: "Manager Name",
+        message: "What is the employee ID",
+        name: "Employee ID",
     }, 
 
     {
         type: "input",
-        message: "What is the team manager's name?",
-        name: "Manager Name",
+        message: "What is the employee github?",
+        name: "Employee github",
     }, 
 
     {
         type: "input",
-        message: "What is the team manager's name?",
-        name: "Manager Name",
+        message: "What is the team member's role",
+        name: "Employee role",
     }, 
 
-];
+])};
+
+questionsForManagement();
+
+followUpQuestions ();
 
 
 
